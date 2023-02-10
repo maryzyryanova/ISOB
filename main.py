@@ -1,5 +1,4 @@
-from lab_1 import caesar_cipher
-
+from caesar_cipher import encode, decode
 
 language = input('Language (RU/ENG): ')
 message = input('Your meassage: ').upper()
@@ -10,4 +9,7 @@ if language == 'RU':
 else:
     alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
-print("Caesar cipher: " + caesar_cipher(alphabet, message, step))
+enc = encode(alphabet, message, step)
+dec = decode(alphabet, enc, step)
+print("To Caesar cipher: " + enc)
+print("From Caesar cipher: " + dec)
