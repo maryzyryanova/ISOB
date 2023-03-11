@@ -1,0 +1,164 @@
+server0 id: server1, server0 key: 463508296
+server1 id: server2, server1" key: 298592234
+Client id: client1, Client key: 633527930
+
+
+Call server 0
+Trying to take permission ticket
+New permission ticket call
+New permission ticket: ('client1', 1, 1612282199992, 1728000000, 179111377)
+
+BEFORE encrypt: ('client1', 1, 1612282199992, 1728000000, 179111377)
+key 896511916
+AFTER encrypt: ¹TjsÏxù¨¶ðÍìÚØu	Û «àÌS¼Ss*uCø[3ÌZv¦EnmåEcý#
+
+('\x10¹TjsÏxù¨\x9f¶ðÍì\x9f\x15ÚØu\tÛ\xa0«à\x9c\x06\x89ÌS¼Ss\x18*uCø[\x963ÌZv\x94¦E\x96nmåE\x91cý#\x16', 179111377)
+633527930
+
+BEFORE encrypt: ('\x10¹TjsÏxù¨\x9f¶ðÍì\x9f\x15ÚØu\tÛ\xa0«à\x9c\x06\x89ÌS¼Ss\x18*uCø[\x963ÌZv\x94¦E\x96nmåE\x91cý#\x16', 179111377)
+key 633527930
+AFTER encrypt: i+Ïo QßYN-Éì·ê*|W¢Õ¬;[s\õ}çÇ  éÊ#j¯ÎËB^§§ÀPU$/ôW+ßVÞlÉiJä	7{p9Ì	÷Pä`©@æem7ê¡Wá¤£vÂ¿ÿº1ü/­ï
+
+
+BEFORE decrypt: i+Ïo QßYN-Éì·ê*|W¢Õ¬;[s\õ}çÇ  éÊ#j¯ÎËB^§§ÀPU$/ôW+ßVÞlÉiJä	7{p9Ì	÷Pä`©@æem7ê¡Wá¤£vÂ¿ÿº1ü/­ï
+AFTER decrypt: ('\x10¹TjsÏxù¨\x9f¶ðÍì\x9f\x15ÚØu\tÛ\xa0«à\x9c\x06\x89ÌS¼Ss\x18*uCø[\x963ÌZv\x94¦E\x96nmåE\x91cý#\x16', 179111377)
+
+Key TGS-Client: 179111377
+
+Trying to get server ticket
+Call TGS. Server id: server1, timestamp: 1612282200028
+
+BEFORE encrypt: ('client1', 1612282200028)
+key 179111377
+AFTER encrypt: ¬n}»Äû2ÝÆ.§¹óE´íDI-tÙï¿ü
+
+New server ticket call
+
+BEFORE decrypt: ¹TjsÏxù¨¶ðÍìÚØu	Û «àÌS¼Ss*uCø[3ÌZv¦EnmåEcý#
+AFTER decrypt: ('client1', 1, 1612282199992, 1728000000, 179111377)
+
+Permission ticket data. Client id: client1, timestamp: 1612282199992, period: 1728000000, key TGS-Client: 179111377
+
+BEFORE decrypt: ¬n}»Äû2ÝÆ.§¹óE´íDI-tÙï¿ü
+AFTER decrypt: ('client1', 1612282200028)
+
+Authority data. Client id: client1, timestamp: 1612282200028
+New server ticket: ('client1', 'server1', 1612282200039, 1728000000, 555598212)
+
+BEFORE encrypt: ('client1', 'server1', 1612282200039, 1728000000, 555598212)
+key 463508296
+AFTER encrypt: ]Ee\æ	Å'ßôWGÄÔ÷¾miÍÝÙCÆým8$ôÍüÙ,tºô}¼kó>q»tV
+
+
+BEFORE encrypt: ("\x98\x1f\x06\x80]Ee\\æ\tÅ\x0b\x9d'ßôW\x90GÄ\x84Ô÷¾\x05m\x81\x8diÍÝÙCÆ\x05ým8$ôÍüÙ,tºô}¼k\x8e\x8có\x82>q\x9e\x8e\x06\x8a\x13»tV", 555598212)
+key 179111377
+AFTER encrypt: p7Ó\¾G¶²¬¨è¼õÑ.lKjÙãø}|w× ug¾Ðt ÔútÈNeÃI$@dzæ8Ü$Å,¶ 4W~¢,ÌìáÇoÖ=4{~×Q½ÍÞ¤þÝå FHË3Ì!a©Hã.¸ùèz¼g°¾H6
+
+
+BEFORE decrypt: p7Ó\¾G¶²¬¨è¼õÑ.lKjÙãø}|w× ug¾Ðt ÔútÈNeÃI$@dzæ8Ü$Å,¶ 4W~¢,ÌìáÇoÖ=4{~×Q½ÍÞ¤þÝå FHË3Ì!a©Hã.¸ùèz¼g°¾H6
+AFTER decrypt: ("\x98\x1f\x06\x80]Ee\\æ\tÅ\x0b\x9d'ßôW\x90GÄ\x84Ô÷¾\x05m\x81\x8diÍÝÙCÆ\x05ým8$ôÍüÙ,tºô}¼k\x8e\x8có\x82>q\x9e\x8e\x06\x8a\x13»tV", 555598212)
+
+Key Server-Client: 555598212
+
+Trying to connect server
+
+BEFORE encrypt: ('client1', 1612282200067)
+key 555598212
+AFTER encrypt: ÁêÐØ-}üî={¿9qÏÐ4Oª1»$¤{¬
+
+New server connection
+
+BEFORE decrypt: ]Ee\æ	Å'ßôWGÄÔ÷¾miÍÝÙCÆým8$ôÍüÙ,tºô}¼kó>q»tV
+AFTER decrypt: ('client1', 'server1', 1612282200039, 1728000000, 555598212)
+
+Server ticket data. Client id: client1, timestamp: 1612282200039, period: 1728000000, key Server-Client: 555598212
+
+BEFORE decrypt: ÁêÐØ-}üî={¿9qÏÐ4Oª1»$¤{¬
+AFTER decrypt: ('client1', 1612282200067)
+
+Authority data. Client id: client1, timestamp: 1612282200067
+Confirmation timestamp is 1612282200068
+
+BEFORE encrypt: 1612282200068
+key 555598212
+AFTER encrypt: (aÐã¸É%d_înï©0
+
+
+BEFORE decrypt: (aÐã¸É%d_înï©0
+AFTER decrypt: 1612282200068
+
+
+Server call is successful
+
+
+Call server 1
+Permission ticket and key TGS-Client already defined
+
+Trying to get server ticket
+Call TGS. Server id: server2, timestamp: 1612282200082
+
+BEFORE encrypt: ('client1', 1612282200082)
+key 179111377
+AFTER encrypt: ¬n}»Äû2ÝÆ.§¹óEW´U6÷s¯S×ît¯
+
+New server ticket call
+
+BEFORE decrypt: ¹TjsÏxù¨¶ðÍìÚØu	Û «àÌS¼Ss*uCø[3ÌZv¦EnmåEcý#
+AFTER decrypt: ('client1', 1, 1612282199992, 1728000000, 179111377)
+
+Permission ticket data. Client id: client1, timestamp: 1612282199992, period: 1728000000, key TGS-Client: 179111377
+
+BEFORE decrypt: ¬n}»Äû2ÝÆ.§¹óEW´U6÷s¯S×ît¯
+AFTER decrypt: ('client1', 1612282200082)
+
+Authority data. Client id: client1, timestamp: 1612282200082
+New server ticket: ('client1', 'server2', 1612282200093, 1728000000, 981219010)
+
+BEFORE encrypt: ('client1', 'server2', 1612282200093, 1728000000, 981219010)
+key 298592234
+AFTER encrypt: d²¼î÷ìØc QMåÎòùãcÒ6Ó¯ÏÈ;{^çÀUÕÕ['8M,øÙgsê¡ÇJÊÕ#s§«0UÇq0á
+
+
+BEFORE encrypt: ("\x90d²¼î÷ìØc\xa0\x9eQMåÎòùãcÒ\x186Ó¯ÏÈ;{^çÀUÕÕ['8\x9dM\x16,\x0fø\x10Ùg\x96sê¡ÇJÊÕ#s§«0UÇq0á", 981219010)
+key 179111377
+ïtºÆ©Séc«ÖÔ¹ÀêþE`pÍo0æ¦s¥|ô°=Àw,Ï£í[÷Í `"çêÂdPiË²¸p¤
+	Õô~¯ÖT@Ñª¥²éðC×ßí&*Kxÿûì¨\@\ºª­
+5É2
+
+
+ïtºÆ©Séc«ÖÔ¹ÀêþE`pÍo0æ¦s¥|ô°=Àw,Ï£í[÷Í `"çêÂdPiË²¸p¤
+	Õô~¯ÖT@Ñª¥²éðC×ßí&*Kxÿûì¨\@\ºª­
+5É2
+AFTER decrypt: ("\x90d²¼î÷ìØc\xa0\x9eQMåÎòùãcÒ\x186Ó¯ÏÈ;{^çÀUÕÕ['8\x9dM\x16,\x0fø\x10Ùg\x96sê¡ÇJÊÕ#s§«0UÇq0á", 981219010)
+
+Key Server-Client: 981219010
+
+Trying to connect server
+
+BEFORE encrypt: ('client1', 1612282200117)
+key 981219010
+AFTER encrypt: U((aß²©ËüÀ¬ÚPÜR&×É«ºX¨;
+
+New server connection
+
+BEFORE decrypt: d²¼î÷ìØc QMåÎòùãcÒ6Ó¯ÏÈ;{^çÀUÕÕ['8M,øÙgsê¡ÇJÊÕ#s§«0UÇq0á
+AFTER decrypt: ('client1', 'server2', 1612282200093, 1728000000, 981219010)
+
+Server ticket data. Client id: client1, timestamp: 1612282200093, period: 1728000000, key Server-Client: 981219010
+
+BEFORE decrypt: U((aß²©ËüÀ¬ÚPÜR&×É«ºX¨;
+AFTER decrypt: ('client1', 1612282200117)
+
+Authority data. Client id: client1, timestamp: 1612282200117
+Confirmation timestamp is 1612282200118
+
+BEFORE encrypt: 1612282200118
+key 981219010
+AFTER encrypt: «ñÉ¤ú¼ydB¨ÃÿÜl
+
+
+BEFORE decrypt: «ñÉ¤ú¼ydB¨ÃÿÜl
+AFTER decrypt: 1612282200118
+
+
+Server call is successful
